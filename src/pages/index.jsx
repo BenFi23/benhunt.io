@@ -24,8 +24,9 @@ const Index = ({ data }) => {
   const { edges } = data.allMarkdownRemark;
   return (
     <Layout>
-      <Helmet title={'Home Page'} />
-      <Header title="Home Page">Gatsby Tutorial Starter</Header>
+      <Helmet title={'Ben Hunt'} />
+      <Header title="Ben Hunt">The mind of man is capable of anything.. because everything is in it,
+      all the past as well as the future - Joseph Conrad</Header>
       <PostWrapper>
         {edges.map(({ node }) => {
           const { id, excerpt, frontmatter } = node;

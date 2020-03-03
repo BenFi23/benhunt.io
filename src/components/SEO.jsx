@@ -15,7 +15,6 @@ const SEO = ({ title, description, banner, pathname, article }) => (
           shortName,
           author,
           siteLanguage,
-          logo,
           siteUrl,
           pathPrefix,
           defaultDescription,
@@ -64,11 +63,7 @@ const SEO = ({ title, description, banner, pathname, article }) => (
             },
             publisher: {
               '@type': 'Organization',
-              name: author,
-              logo: {
-                '@type': 'ImageObject',
-                url: siteUrl + realPrefix + logo,
-              },
+              name: author
             },
             isPartOf: siteUrl,
             mainEntityOfPage: {
@@ -138,7 +133,6 @@ const query = graphql`
         shortName
         author
         siteLanguage
-        logo
         siteUrl: url
         pathPrefix
         defaultDescription: description
