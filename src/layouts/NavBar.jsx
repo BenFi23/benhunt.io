@@ -35,6 +35,7 @@ const NavBar = () => (
       <Link to="/blog">Blog</Link>
       <Link to="/about">About</Link>
       <Link to="/invest">Invest</Link>
+      <Link to="/contact">Contact</Link>
     </Nav>
   </Headroom>
 );

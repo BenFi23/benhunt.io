@@ -3,7 +3,8 @@ import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import styled from '@emotion/styled';
-import { Header, PostList } from 'components';
+import { Header, PostList} from 'components';
+import DynamicText from 'components/DynamicText'
 import { Layout } from 'layouts';
 
 const PostWrapper = styled.div`
@@ -20,13 +21,23 @@ const PostWrapper = styled.div`
   }
 `;
 
+const quotes = 
+  [
+    "Cogito, ergo sum. - René Descartes", // I think therefore I am
+    "The mind of man is capable of anything because everything is in it. - Joseph Conrad ",
+    "If we continue to develop our technology without wisdom or prudence, \
+      our Servant may be our executioner. - General Omar Bradley"
+  ]
+
+
 const Index = ({ data }) => {
   const { edges } = data.allMarkdownRemark;
   return (
     <Layout>
       <Helmet title={'Ben Hunt'} />
-      <Header title="Ben Hunt">The mind of man is capable of anything.. because everything is in it,
-      all the past as well as the future - Joseph Conrad</Header>
+      <Header title="Ben Hunt">
+        <DynamicText textList={quotes}/>
+      </Header>
       <PostWrapper>
         {edges.map(({ node }) => {
           const { id, excerpt, frontmatter } = node;

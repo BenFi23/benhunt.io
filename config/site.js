@@ -1,17 +1,17 @@
 module.exports = {
   pathPrefix: '/', // Prefix for all links. If you deploy your site to example.com/portfolio your pathPrefix should be "portfolio"
-  title: 'Gatsby Tutorial Starter', // Navigation and Site Title
-  titleAlt: 'Gatsby Tutorial Starter', // Title for JSONLD
-  description: 'A Gatsby V2 Starter Template Built with a Step By Step Guide',
-  url: 'https://gatsby-tutorial-starter.netlify.com', // Domain of your site. No trailing slash!
-  siteUrl: 'https://gatsby-tutorial-starter.netlify.com', // url + pathPrefix
+  title: 'Ben Hunt Blogs', // Navigation and Site Title
+  titleAlt: 'Ben Hunt Blogs', // Title for JSONLD
+  description: 'Ben Hunt\'s blogs',
+  url: 'https://benhunt.io', // Domain of your site. No trailing slash!
+  siteUrl: 'https://benhunt.io', // url + pathPrefix
   siteLanguage: 'en', // Language Tag on <html> element
   banner: 'static/logo/banner.png',
   // JSONLD / Manifest
-  favicon: 'static/logo/letter-b.jpg', // Used for manifest favicon generation
-  shortName: 'GatsbyTut', // shortname for manifest. MUST be shorter than 12 characters
-  author: 'Justin', // Author for schemaORGJSONLD
+  favicon: 'static/logo/favicon.png', // Used for manifest favicon generation
+  shortName: 'BensBlogs', // shortname for manifest. MUST be shorter than 12 characters
+  author: 'Ben', // Author for schemaORGJSONLD
   themeColor: '#121212',
   backgroundColor: '#121212',
-  twitter: '@justinformentin', // Twitter Username
+  twitter: '@benhunt', // Twitter Username
 };
